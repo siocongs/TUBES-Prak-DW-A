@@ -587,6 +587,17 @@ body {
     .news-grid {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-bottom-wrap {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
   }
 
 .gaga-footer {
