@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAGA Indonesia - Attitude in a Cup </title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Find a Store | GAGA </title>
+    <link rel="stylesheet" href="assets/css/store.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -66,42 +66,86 @@
       </div>
     </div>
   </nav>
-
-  <div class="top-bar">
-    <span>It’s a great day for a cup of tea.</span>
-    <a href="#" class="top-bar-btn">Start Order</a>
-  </div>
   <!-- End NAVBAR -->
 
+  <!-- STORE WRAPPER -->
+  <div class="store-wrapper">
 
+    <!-- LEFT PANEL -->
+    <aside class="store-sidebar">
 
+      <div class="pickup-tabs">
+        <button id="pickupTab" class="active">Pickup</button>
+        <button id="deliveryTab">Delivery</button>
+      </div>
+    
+      <!-- PICKUP CONTENT -->
+      <div id="pickupContent">    
+        <!-- SEARCH -->
+        <div class="store-search">
+          <input type="text" id="storeSearch" placeholder="Find a store">
+          <button><i class="bi bi-search"></i></button>
+        </div>
+
+        <!-- STORE LIST -->
+        <div class="store-list" id="storeList"></div>
+    
+      </div>
+    
+      <!-- DELIVERY CONTENT -->
+      <div id="deliveryContent" class="delivery-content">
+        <h2>Today deserves delivery</h2>
+    
+        <p class="delivery-desc">
+          Enjoy GAGA delivery powered by our delivery partners.
+        </p>
+    
+        <a href="#" class="delivery-btn">
+          Get started <i class="bi bi-box-arrow-up-right"></i>
+        </a>
+    
+        <p class="delivery-note">
+          Menu limited. Delivery pricing may be higher than in-store.
+          Additional fees may apply.
+        </p>
+      </div>
+    
+    </aside>
+    
+
+    <!-- MAP -->
+    <section class="store-map">
+      <div class="store-map" id="map"></div>
+    </section>
+
+  </div>
 
   <!-- FOOTER -->
   <footer class="gaga-footer">
     <div class="container footer-grid">
 
-      <!-- LOGO -->
+      <!-- Grid 1 LOGO -->
       <div class="footer-brand">
         <img src="assets/img/logo.jpg" alt="GAGA Logo">
       </div>
 
-      <!-- CUSTOMER CENTER -->
+      <!-- Grid 2 CUSTOMER CENTER -->
       <div class="footer-col">
-        <h4>Customer Center</h4>
+        <h4>Office</h4>
         <p>
           Gedung Graha Arda<br>
-          Lantai 1 Suite 120 & 130<br><br>
-          Jl. Hayam Wuruk No. 28<br>
-          Kebon Klapa, Gambir<br>
-          Jakarta Pusat, DKI Jakarta
+          Lantai 6, Lobby A<br><br>
+          Jl. H. R. Rasuna Said Kav B6.<br>
+          Setiabudi, Jakarta Pusat<br>
+          DKI Jakarta.
         </p>
 
         <p class="footer-wa">
-          <i class="bi bi-whatsapp"></i> 0812-1111-8456
+          <i class="bi bi-whatsapp"></i> (021) 5220352
         </p>
       </div>
 
-      <!-- CONSUMER PROTECTION -->
+      <!-- Grid 3 CONSUMER -->
       <div class="footer-col">
         <h4>Consumer Complaints Service</h4>
         <p>
@@ -136,10 +180,14 @@
   </footer>
   <!-- END FOOTER -->
       
-         
-      
     
-    <script src="assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/store.js"></script>
+  <script
+  src="https://cdn.jsdelivr.net/gh/somanchiu/Keyless-Google-Maps-API@v7.1/mapsJavaScriptAPI.js"
+  async
+  defer
+></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
