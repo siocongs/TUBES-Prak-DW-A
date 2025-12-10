@@ -1,10 +1,10 @@
-# ☕ Coffee Shop Website - Tugas Besar Praktikum Desain Web
+# ☕ Coffee Shop Website - Tugas Besar Prak. Desain Web
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/siocongs/TUBES-Prak-DW-A)
 ![GitHub license](https://img.shields.io/github/license/siocongs/TUBES-Prak-DW-A)
 ![GitHub last commit](https://img.shields.io/github/last-commit/siocongs/TUBES-Prak-DW-A)
 
-> **Website statis minimalis untuk kedai minuman dengan fitur navigasi multi-halaman yang responsif.**
+> **Website statis minimalis untuk kedai minuman dengan fitur navigasi multi-halaman responsif.**
 
 ---
 
@@ -12,7 +12,7 @@
 
 Proyek ini dibuat untuk memenuhi **Tugas Besar Praktikum Desain Web (Kelas A)**. Website ini bertema **Coffee Shop** yang bertujuan untuk memberikan informasi mengenai produk, promo, berita, dan lokasi toko kepada pelanggan secara online.
 
-Sesuai ketentuan tugas, website ini dibangun menggunakan teknologi web dasar (HTML, CSS, JS) dengan bantuan framework Bootstrap 5 untuk memastikan tampilan responsif di mode desktop maupun mobile.
+Sesuai ketentuan tugas, website ini dibangun menggunakan teknologi web dasar (HTML, CSS, JS) dengan framework Bootstrap 5 agar tampilan responsif di mode desktop maupun mobile.
 
 🔗 **Live Demo:** [gagaindo.com](http://gagaindo.com) / *(link GitHub Pages)*
 
@@ -32,12 +32,12 @@ Sesuai ketentuan tugas, website ini dibangun menggunakan teknologi web dasar (HT
 
 ## 🛠️ Teknologi yang Digunakan
 
-Proyek ini dibangun menggunakan *stack* berikut:
+Project ini dibangun menggunakan *stack* berikut:
 
 * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) **HTML5** - Struktur utama halaman web.
 * ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) **CSS3** - Kustomisasi gaya dan tata letak.
 * ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) **Bootstrap 5** - Framework CSS untuk desain responsif dan komponen UI.
-* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) **JavaScript** - Interaktivitas website.
+* ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) **JavaScript** - Interaktivitas website / DOM.
 
 ---
 
