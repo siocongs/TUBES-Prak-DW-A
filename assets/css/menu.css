@@ -1,0 +1,250 @@
+/* HEADER IMAGE */
+.menu-hero {
+    position: relative;
+    height: 330px;
+    background-image: url('../img/header-menu.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FULL OVERLAY */
+.menu-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 252, 252, 0.55);
+    z-index: 1;
+}
+
+.menu-hero-overlay {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 40px 80px;
+    border-radius: 20px;
+}
+
+.menu-title {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #000;
+    position: relative;
+    z-index: 2;
+}
+
+/* LAYOUT */
+.menu-layout {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 50px;
+}
+
+/* SIDEBAR */
+.menu-sidebar {
+    position: sticky;
+    top: 100px;
+    height: max-content;
+}
+
+.menu-sidebar-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.menu-categories li {
+    list-style: none;
+    padding: 12px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #444;
+    transition: 0.2s ease;
+}
+.menu-categories li:hover {
+    background: #f0f0f0;
+}
+.menu-categories li.active {
+    background: #000;
+    color: #fff;
+}
+
+/* MENU CARDS */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    align-items: start;
+
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 14px;
+    padding: 15px;
+    transition: 0.25s;
+}
+.menu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+.menu-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+.menu-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.menu-price {
+    font-size: 1rem;
+    color: #146c43;
+    font-weight: 700;
+}
+.menu-desc {
+    font-size: .9rem;
+    opacity: .8;
+}
+
+.menu-section {
+    margin-bottom: 120px !important;
+}
+
+/* MODAL OVERLAY */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+
+    overflow: hidden;
+}
+
+/* MODAL BOX */
+.modal-box {
+    background: white;
+    max-width: 850px;
+    width: 100%;
+    border-radius: 16px;
+    padding: 30px;
+    position: relative;
+    animation: fadeIn 0.25s ease;
+
+    max-height: 90vh;       
+    overflow: hidden;       
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* CLOSE BUTTON */
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 999999;
+    padding: 10px;
+    line-height: 1;
+}
+
+/* CONTENT LAYOUT */
+.modal-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-img-wrap {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-img {
+    width: 100%;
+    max-height: 55vh;    
+    object-fit: contain; 
+}
+
+.modal-info {
+    flex: 1.2;
+}
+
+.modal-price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #006d2f;
+}
+
+.modal-btn {
+    display: inline-block;
+    background: #222;
+    color: white;
+    padding: 12px 24px;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.modal-btn:hover {
+    background: #fff;
+    color: #000;
+    border: solid 1px #222;
+}
+
+/* MOBILE: */
+@media (max-width: 768px) {
+
+    .menu-layout {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .menu-sidebar {
+        position: relative !important;
+        top: 0 !important;
+        width: 100%;
+    }
+
+    .menu-categories {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .menu-categories li {
+        white-space: nowrap;
+        flex: 0 0 auto;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr !important;
+    }
+
+    .menu-card {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 750px) {
+    .modal-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

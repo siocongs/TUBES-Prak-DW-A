@@ -643,8 +643,23 @@ body {
     transition: all 0.3s;
   }
 
-  .footer-social a:hover {
-    background: #41d999;
+  .footer-social a.youtube:hover {
+    background: #ff0000;
+    color: #000;
+  }
+
+  .footer-social a.instagram:hover {
+    background: #d33f9f;
+    color: #000;
+  }
+
+  .footer-social a.twitter:hover {
+    background: #323beb;
+    color: #0b1a2a;
+  }
+
+  .footer-social a.linkedin:hover {
+    background: #2e73dc;
     color: #0b1a2a;
   }
 /* End FOOTER */
@@ -695,8 +710,66 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+
+  .hero {
+    height: auto;
+    padding-top: 40px;
+  }
+
+  .carousel,
+  .carousel-item {
+    height: auto;
+  }
+
+  .hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 0 !important;
+    gap: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem !important;
+    line-height: 1.3;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-img img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  /* Tombol navigasi carousel agar tidak menutupi gambar */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+    top: 50%;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-size: 20px;
+  }
+}
+
 @media (max-width: 576px) {
   .news-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hero-text h1 {
+    font-size: 1.9rem !important;
+  }
+
+  .hero-img img {
+    max-width: 280px;
   }
 }
