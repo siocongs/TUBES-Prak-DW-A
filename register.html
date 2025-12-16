@@ -79,7 +79,7 @@
             Join GAGA Rewards to earn points for free drinks & special perks.
         </p>
     
-        <form class="register-box shadow-sm p-4 rounded-4 bg-white">
+        <form id="registerForm" class="register-box shadow-sm p-4 rounded-4 bg-white">
     
             <p class="text-muted" style="font-size:14px;">* indicates required field</p>
     
@@ -87,16 +87,16 @@
             <h5 class="fw-semibold mt-4 mb-3">Personal Information</h5>
     
             <label class="form-label fw-semibold">* First name</label>
-            <input type="text" class="form-control rounded-pill mb-3" placeholder="First name" required>
+            <input type="text" id="firstName" class="form-control rounded-pill mb-3" placeholder="First name" required>
     
             <label class="form-label fw-semibold">* Last name</label>
-            <input type="text" class="form-control rounded-pill mb-4" placeholder="Last name" required>
+            <input type="text" id="lastName" class="form-control rounded-pill mb-4" placeholder="Last name" required>
     
             <!-- ACCOUNT SECURITY -->
             <h5 class="fw-semibold mt-4 mb-3">Account Security</h5>
     
             <label class="form-label fw-semibold">* Email address</label>
-            <input type="email" class="form-control rounded-pill mb-1" placeholder="Email address" required>
+            <input type="email" id="regEmail" class="form-control rounded-pill mb-1" placeholder="Email address" required>
             <small class="text-muted ms-1">This will be your username</small>
     
             <label class="form-label fw-semibold mt-4">* Password</label>
@@ -191,5 +191,41 @@
             x.type = x.type === "password" ? "text" : "password";
         }
     </script>
+    <script>
+        document.getElementById("registerForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+        
+            const firstName = document.getElementById("firstName").value.trim();
+            const lastName  = document.getElementById("lastName").value.trim();
+            const email     = document.getElementById("regEmail").value.trim();
+            const password  = document.getElementById("regPassword").value;
+        
+            if (!firstName || !lastName || !email || !password) {
+                alert("Semua field wajib diisi");
+                return;
+            }
+        
+            let users = JSON.parse(localStorage.getItem("users")) || [];
+        
+            // cek email sudah ada
+            const exists = users.find(u => u.email === email);
+            if (exists) {
+                alert("Email sudah terdaftar");
+                return;
+            }
+        
+            users.push({
+                firstName,
+                lastName,
+                email,
+                password
+            });
+        
+            localStorage.setItem("users", JSON.stringify(users));
+        
+            alert("Registrasi berhasil! Silakan login.");
+            window.location.href = "login.html";
+        });
+    </script>        
 </body>
 </html>
