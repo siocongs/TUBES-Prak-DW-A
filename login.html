@@ -80,12 +80,12 @@
 
             <!-- Username -->
             <label class="input-label">* Username or email address</label>
-            <input type="text" class="input-box" placeholder="Your email">
+            <input type="text" id="loginEmail" class="input-box" placeholder="Your email">
 
             <!-- Password -->
             <label class="input-label">* Password</label>
             <div class="password-wrapper">
-                <input type="password" class="input-box" id="passwordInput" placeholder="Password">
+                <input type="password" id="passwordInput" class="input-box" id="passwordInput" placeholder="Password">
                 <i class="bi bi-eye-slash position-absolute top-50 end-0 translate-middle-y me-3"
                    style="cursor:pointer;" onclick="togglePassword()"></i>
             </div>
@@ -103,7 +103,7 @@
             </div>
 
             <!-- Button -->
-            <button class="login-btn">Sign in</button>
+            <button class="login-btn" onclick="loginUser()">Sign in</button>
         </div>
 
         <!-- JOIN REWARDS SECTION -->
@@ -187,5 +187,25 @@
             x.type = x.type === "password" ? "text" : "password";
         }
     </script>
+    <script>
+        function loginUser() {
+            const email = document.getElementById("loginEmail").value.trim();
+            const password = document.getElementById("passwordInput").value;
+        
+            let users = JSON.parse(localStorage.getItem("users")) || [];
+        
+            const user = users.find(u => u.email === email && u.password === password);
+        
+            if (!user) {
+                alert("Email atau password salah");
+                return;
+            }
+        
+            localStorage.setItem("currentUser", JSON.stringify(user));
+        
+            alert("Login berhasil. Selamat datang " + user.firstName + "!");
+            window.location.href = "index.html";
+        }
+    </script>        
 </body>
 </html>
