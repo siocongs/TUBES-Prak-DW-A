@@ -72,73 +72,87 @@
   <!-- End NAVBAR -->
 
   <!-- MENU HEADER -->
-  <section class="menu-hero">
-    <div class="menu-hero-overlay">
+  <section class="menu-section">
+    <div class="container">
+  
+      <!-- HERO -->
+      <div class="menu-hero">
         <h1 class="menu-title">OUR MENU</h1>
-    </div>
-  </section>
-
-  <!-- MENU WRAPPER -->
-  <section class="menu-section container">
-
-    <div class="menu-layout">
-
-        <!-- SIDEBAR / CATEGORY -->
+      </div>
+  
+      <!-- CATEGORY BAR -->
+      <div class="menu-category-bar">
+        <button class="active" data-category="all">All</button>
+        <button data-category="recommended">Recommended</button>
+        <button data-category="thai-tea">Thai Tea</button>
+        <button data-category="milk-tea">Milk Tea</button>
+        <button data-category="black-tea">Black Tea</button>
+        <button data-category="fresh-milk">Fresh Milk</button>
+        <button data-category="fresh-juice">Fresh Juice</button>
+        <button data-category="chocolate">Chocolate</button>
+        <button data-category="green-tea">Green Tea</button>
+        <button data-category="coffee">Coffee</button>
+        <button data-category="frappe">Frappe</button>
+        <button data-category="dessert">Dessert</button>
+        <button data-category="signature">Signature</button>
+      </div>
+  
+      <!-- CONTENT -->
+      <div class="menu-layout">
+  
+        <!-- SIDEBAR (DESKTOP) -->
         <aside class="menu-sidebar">
-            <h5 class="menu-sidebar-title">Categories</h5>
-
-            <ul class="menu-categories" id="menuCategories">
-                <li class="active" data-category="all">All</li>
-                <li data-category="recommended">Recommended</li>
-                <li data-category="thai-tea">Thai Tea</li>
-                <li data-category="milk-tea">Milk Tea</li>
-                <li data-category="black-tea">Black Tea</li>
-                <li data-category="fresh-milk">Fresh Milk</li>
-                <li data-category="fresh-juice">Fresh Juice</li>
-                <li data-category="chocolate">Chocolate</li>
-                <li data-category="green-tea">Green Tea</li>
-                <li data-category="coffee">Coffee</li>
-                <li data-category="frappe">Frappe</li>
-                <li data-category="dessert">Dessert</li>
-                <li data-category="signature">Signature</li>
-            </ul>
+          <ul class="menu-categories" id="menuCategories">
+            <li class="active" data-category="all">All</li>
+            <li data-category="recommended">Recommended</li>
+            <li data-category="thai-tea">Thai Tea</li>
+            <li data-category="milk-tea">Milk Tea</li>
+            <li data-category="black-tea">Black Tea</li>
+            <li data-category="fresh-milk">Fresh Milk</li>
+            <li data-category="fresh-juice">Fresh Juice</li>
+            <li data-category="chocolate">Chocolate</li>
+            <li data-category="green-tea">Green Tea</li>
+            <li data-category="coffee">Coffee</li>
+            <li data-category="frappe">Frappe</li>
+            <li data-category="dessert">Dessert</li>
+            <li data-category="signature">Signature</li>
+        </ul>
         </aside>
-
-        <!-- MENU LIST -->
+  
+        <!-- MENU ITEMS -->
         <div class="menu-items" id="menuItems">
-
-            <!-- Menu items will be injected via JS menu.js -->
-
+          <!-- Menu items akan muncul disini -->
         </div>
-
+  
+      </div>
     </div>
-
   </section>
+  
 
   <!-- PRODUCT MODAL -->
-<div id="productModal" class="modal-overlay">
-  <div class="modal-box">
+  <div id="productModal" class="modal-overlay">
+    <div class="modal-box">
 
-    <span class="modal-close" onclick="closeModal()">&times;</span>
+      <span class="modal-close" onclick="closeModal()">&times;</span>
 
-    <div class="modal-content">
-      <div class="modal-img-wrap">
-        <img id="modalImg" class="modal-img">
+      <div class="modal-content">
+        <div class="modal-img-wrap">
+          <img id="modalImg" class="modal-img">
+        </div>
+
+        <div class="modal-info">
+          <h2 id="modalName"></h2>
+          <p class="modal-price" id="modalPrice"></p>
+          <p class="modal-desc" id="modalDesc"></p>
+
+          <a id="modalOrderBtn" class="modal-btn" href="store.html">
+            <i class="bi bi-bag"></i> Pesan di Store
+          </a>
+        </div>
       </div>
 
-      <div class="modal-info">
-        <h2 id="modalName"></h2>
-        <p class="modal-price" id="modalPrice"></p>
-        <p class="modal-desc" id="modalDesc"></p>
-
-        <a id="modalOrderBtn" class="modal-btn" href="store.html">
-          <i class="bi bi-bag"></i> Pesan di Store
-        </a>
-      </div>
     </div>
-
   </div>
-</div>
 
 
   <!-- FOOTER -->
