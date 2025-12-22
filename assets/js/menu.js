@@ -269,62 +269,111 @@ const menuData = [
         category: "frappe",
     }
 ];
+document.addEventListener("DOMContentLoaded", () => {
 
-// RENDER MENU
-function renderMenu(category = "all") {
-    const container = document.getElementById("menuItems");
-    container.innerHTML = "";
-
-    let filtered = menuData;
-
-    if (category !== "all") {
-        if (category === "recommended") {
-            filtered = menuData.filter(m => m.recommended);
-        } else {
-            filtered = menuData.filter(m => 
-                Array.isArray(m.category)
-                    ? m.category.includes(category)
-                    : m.category === category
-            );            
-        }
-    }
-
-    filtered.forEach(item => {
-        container.innerHTML += `
-            <div class="menu-card" onclick='openModal(${JSON.stringify(item)})'>
-                <img src="${item.img}" class="menu-img">
-                <div class="menu-name">${item.name}</div>
-                <div class="menu-price">start at Rp ${item.price.toLocaleString()}k</div>
-                <p class="menu-desc">${item.desc}</p>
-            </div>
+    /* =========================
+       DATA
+    ========================= */
+  
+    const menuItemsEl = document.getElementById("menuItems");
+    const sidebarItems = document.querySelectorAll("#menuCategories li");
+    const categoryButtons = document.querySelectorAll(".menu-category-bar button");
+  
+    /* =========================
+       RENDER MENU
+    ========================= */
+    function renderMenu(category = "all") {
+      menuItemsEl.innerHTML = "";
+  
+      const filtered =
+        category === "all"
+          ? menuData
+          : category === "recommended"
+          ? menuData.filter(m => m.recommended)
+          : menuData.filter(m =>
+              Array.isArray(m.category)
+                ? m.category.includes(category)
+                : m.category === category
+            );
+  
+      if (!filtered.length) {
+        menuItemsEl.innerHTML = `<p class="text-muted">No menu available</p>`;
+        return;
+      }
+  
+      filtered.forEach((item, index) => {
+        const card = document.createElement("div");
+        card.className = "menu-card";
+        card.dataset.index = menuData.indexOf(item);
+  
+        card.innerHTML = `
+          <img src="${item.img}" class="menu-img">
+          <div class="menu-name">${item.name}</div>
+          <div class="menu-price">start at Rp ${item.price.toLocaleString()}k</div>
+          <p class="menu-desc">${item.desc || ""}</p>
         `;
+  
+        card.addEventListener("click", () => openModal(menuData.indexOf(item)));
+        menuItemsEl.appendChild(card);
+      });
+    }
+  
+    /* =========================
+       ACTIVE STATE SYNC
+    ========================= */
+    function setActive(category) {
+      sidebarItems.forEach(li =>
+        li.classList.toggle("active", li.dataset.category === category)
+      );
+  
+      categoryButtons.forEach(btn =>
+        btn.classList.toggle("active", btn.dataset.category === category)
+      );
+    }
+  
+    /* =========================
+       CATEGORY CLICK (DESKTOP)
+    ========================= */
+    sidebarItems.forEach(li => {
+      li.addEventListener("click", () => {
+        const category = li.dataset.category;
+        setActive(category);
+        renderMenu(category);
+      });
     });
-}
-
-// CATEGORY CLICK
-document.querySelectorAll("#menuCategories li").forEach(li => {
-    li.addEventListener("click", () => {
-        document.querySelectorAll("#menuCategories li").forEach(c => c.classList.remove("active"));
-        li.classList.add("active");
-
-        renderMenu(li.dataset.category);
+  
+    /* =========================
+       CATEGORY CLICK (MOBILE)
+    ========================= */
+    categoryButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const category = btn.dataset.category;
+        setActive(category);
+        renderMenu(category);
+      });
     });
-});
-
-// DEFAULT: SHOW ALL
-renderMenu();
-
-// Open Modal
-function openModal(item) {
-    document.getElementById("modalImg").src = item.img;
-    document.getElementById("modalName").innerHTML = item.name;
-    document.getElementById("modalPrice").innerHTML = "Rp " + item.price.toLocaleString() + "k";
-    document.getElementById("modalDesc").innerHTML = item.desc;
-
-    document.getElementById("productModal").style.display = "flex";
-}
-
-// Close Modal
-function closeModal() {
-    document.getElementById("productModal").style.display = "none";
-}
+  
+    /* =========================
+       MODAL
+    ========================= */
+    function openModal(index) {
+      const item = menuData[index];
+      document.getElementById("modalImg").src = item.img;
+      document.getElementById("modalName").innerHTML = item.name;
+      document.getElementById("modalPrice").innerHTML = "Rp " + item.price + "k";
+      document.getElementById("modalDesc").innerHTML = item.desc || "";
+      document.getElementById("productModal").style.display = "flex";
+    }
+  
+    window.closeModal = function () {
+      document.getElementById("productModal").style.display = "none";
+    };
+  
+    /* =========================
+       INIT
+    ========================= */
+    setActive("all");
+    renderMenu("all");
+  
+  });
+  
