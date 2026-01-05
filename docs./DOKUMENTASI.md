@@ -163,7 +163,7 @@ flowchart TD
 - Images dioptimalkan untuk loading cepat
 - Kode telah diorganisir dengan struktur folder yang jelas
 
-**Link Repository:** [https://github.com/username/gaga-website](https://github.com/username/gaga-website)  
+**Link Repository:** [https://github.com/siocongs/TUBES-Prak-DW-A.git]
 **Live Demo:** [https://username.github.io/gaga-website](https://username.github.io/gaga-website)
 
 ---
