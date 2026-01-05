@@ -3,8 +3,9 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/siocongs/TUBES-Prak-DW-A)
 ![GitHub license](https://img.shields.io/github/license/siocongs/TUBES-Prak-DW-A)
 ![GitHub last commit](https://img.shields.io/github/last-commit/siocongs/TUBES-Prak-DW-A)
+[![Laporan Dokumentasi](https://img.shields.io/badge/Laporan-Dokumentasi-blue?style=flat&logo=read-the-docs&logoColor=white)](https://github.com/siocongs/TUBES-Prak-DW-A/blob/main/docs./DOKUMENTASI.md)
 
-> **Website statis minimalis untuk kedai minuman dengan fitur navigasi multi-halaman responsif.**
+> **Website statis minimalis untuk profil & store dengan fitur navigasi multi-halaman responsif.**
 
 ---
 
@@ -14,19 +15,23 @@ Proyek ini dibuat untuk memenuhi **Tugas Besar Praktikum Desain Web (Kelas A)**.
 
 Sesuai ketentuan tugas, website ini dibangun menggunakan teknologi web dasar (HTML, CSS, JS) dengan framework Bootstrap 5 agar tampilan responsif di mode desktop maupun mobile.
 
-🔗 **Live Demo:** [gagaindo.com](http://gagaindo.com) / *(link GitHub Pages)*
+### 🔗 Live Demo & Deployment
+| Platform | Link | Status |
+| :--- | :--- | :---: |
+| **GitHub Pages** | <a href="https://siocongs.github.io/TUBES-Prak-DW-A/"><img src="https://img.shields.io/badge/Visit-GitHub_Pages-black?style=for-the-badge&logo=github&logoColor=white" height="30"/></a> | 🟢 |
+| **Netlify** | <a href="https://gagaindo.netlify.app/"><img src="https://img.shields.io/badge/Visit-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" height="30"/></a> | 🟢 |
 
 ---
 
 ## 👥 Anggota Kelompok (Tema: Website Coffee Shop)
 
-| NPM | Nama Anggota | Role |
-| :--- | :--- | :--- |
-| **4524210141** | **Muhamad Bachtiar** | Developer / Maintainer |
-| 4524210131 | Vina Aisya Hafiz | Developer / Designer |
-| 4524210051 | Lilis | Developer |
-| 4524210056 | Muhammad Agis Irawan | Designer |
-| 4524210125 | Satrio Bagaskoro | Designer |
+| NPM | Nama Anggota | Username | Role |
+| :--- | :--- | :--- | :--- |
+| **4524210141** | **Muhamad Bachtiar** | [@siocongs](https://github.com/siocongs) | Developer / Maintainer |
+| 4524210131 | Vina Aisya Hafiz | [@vincyy0503](https://github.com/vincyy0503) | Developer / Designer |
+| 4524210051 | Lilis | [“Lilis](https://github.com/lilisls) | Developer / Designer |
+| 4524210056 | Muhammad Agis Irawan | [@agisirawan072](https://github.com/agisirawan072) | Maintainer / Designer |
+| 4524210125 | Satrio Bagaskoro | [@SatrioBagas14](https://github.com/SatrioBagas14) | Maintainer / Designer |
 
 ---
 
