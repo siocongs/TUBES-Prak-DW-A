@@ -14,7 +14,7 @@ Website GAGA Indonesia adalah platform e-commerce dan informasi untuk brand minu
 | No | Nama Anggota | Npm | Bagian yang Dikerjakan | 
 |----|-------------|-----------------------|-----------|
 | 1  | Muhamad Bachtiar | 4524210141 |  |
-| 2  | Vina Aisya Hafiz | 452421013 | Developer Contact & About, Promo, Designer |
+| 2  | Vina Aisya Hafiz | 4524210131 | Developer Contact & About, Promo, Designer |
 | 3  | Lilis | 4524210051 | | 
 | 4  | Muhammad Agis Irawan | 4524210056 | |
 | 5  | Satrio Bagaskoro | 4524210125 |  | 
