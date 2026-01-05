@@ -1,6 +1,7 @@
-# Laporan Proyek Website GAGA Thailand Tea
+# ☕ Laporan Proyek Website Coffee Shop GAGA
+> **Website statis minimalis untuk profil & store dengan fitur navigasi multi-halaman responsif.**
 
-## 1. Identitas Proyek
+## 1. 📖 Identitas Proyek
 
 ### Nama Project
 **GAGA Indonesia - Thailand Tea Experience**
@@ -8,16 +9,15 @@
 ### Deskripsi Singkat
 Website GAGA Indonesia adalah platform e-commerce dan informasi untuk brand minuman Thai Tea terkemuka di Indonesia. Website ini menghadirkan pengalaman digital yang modern dan responsif untuk memperkenalkan produk, promosi, dan informasi outlet GAGA kepada pelanggan. Dengan konsep "Attitude in a Cup", website ini dirancang untuk menarik target pasar muda dengan tampilan yang bold, fun, dan interaktif.
 
-### Daftar Anggota Kelompok (5 Orang)
 ## Pembagian Tugas Anggota Kelompok
 
-| No | Nama Anggota | Npm | Bagian yang Dikerjakan | 
+| No | Nama Anggota | NPM | Bagian yang Dikerjakan | 
 |----|-------------|-----------------------|-----------|
-| 1  | Muhamad Bachtiar | 4524210141 |  |
-| 2  | Vina Aisya Hafiz | 4524210131 | Developer Contact & About, Promo, Designer |
-| 3  | Lilis | 4524210051 | | 
-| 4  | Muhammad Agis Irawan | 4524210056 | |
-| 5  | Satrio Bagaskoro | 4524210125 |  | 
+| 1  | Muhamad Bachtiar | 4524210141 | Developer & Designer Home, Menu, Store, Login, Register |
+| 2  | Vina Aisya Hafiz | 4524210131 | Developer & Designer Contact / About, Promo |
+| 3  | Lilis | 4524210051 | Developer & Designer News Page | 
+| 4  | Muhammad Agis Irawan | 4524210056 | Developer & Contributor Page (Code Maintenance) |
+| 5  | Satrio Bagaskoro | 4524210125 | Developer & Contributor Menu (Perbaikan Kode & Bug) | 
 
 ---
 
@@ -37,14 +37,15 @@ Website GAGA Indonesia adalah platform e-commerce dan informasi untuk brand minu
 - **Figma** - Untuk desain mockup dan wireframe
 
 ### Hosting
-- **GitHub Pages** - Untuk deployment statis (atau platform lain yang digunakan)
+- **GitHub Pages** - Untuk deployment statis & performa cepat
+- **Netlify** - Untuk deployment dengan sortlink
 
 ---
 
 ## 3. Daftar Fitur
 
 ### Fitur Utama
-1. **Multi-page Navigation** - 7 halaman utama yang saling terhubung
+1. **Multi-page Navigation** - 8 halaman utama yang saling terhubung
 2. **Responsive Design** - Optimal di mobile, tablet, dan desktop
 3. **Interactive Menu** - Filter kategori produk dengan modal detail
 4. **Store Locator** - Peta interaktif dengan daftar outlet
@@ -96,39 +97,22 @@ flowchart TD
 ## 5. Bukti Responsivitas & Tampilan
 
 ### Homepage (index.html)
-#### Mobile View (375px)
-![Mobile - Homepage](url_screenshot_home_mobile)
-*Tampilan mobile dengan menu hamburger*
-
-#### Tablet View (768px)
-![Tablet - Homepage](url_screenshot_home_tablet)
-*Layout grid menyesuaikan ukuran tablet*
-
-#### Desktop View (1440px)
-![Desktop - Homepage](url_screenshot_home_desktop)
-*Full layout dengan semua komponen*
+| Desktop (1440px) | Tablet/Pad (768px) | Mobile (375px) |
+| :-: | :-: | :-: |
+| <img src="https://github.com/user-attachments/assets/7814924e-4e07-473c-8670-1d668d546f10" alt="Desktop" width="400"> | <img src="https://github.com/user-attachments/assets/a8be5cec-f769-40b0-b680-d02bc5e340d1" alt="Tablet" width="260"> | <img src="https://github.com/user-attachments/assets/a6993959-865a-44ff-b6be-599f396be846" alt="Mobile" width="200"> |
+| *Full layout dengan semua komponen* | *Layout grid menyesuaikan ukuran tablet* | *Tampilan mobile dengan menu hamburger* |
 
 ### Menu Page (menu.html)
-#### Mobile View
-![Mobile - Menu](url_screenshot_menu_mobile)
-*Filter kategori horizontal scroll*
-
-#### Tablet View
-![Tablet - Menu](url_screenshot_menu_tablet)
-*Grid 2 kolom untuk tablet*
-
-#### Desktop View
-![Desktop - Menu](url_screenshot_menu_desktop)
-*Sidebar kiri dengan grid 3 kolom*
+| Desktop | Tablet/Pad | Mobile |
+| :-: | :-: | :-: |
+| <img src="https://github.com/user-attachments/assets/8fb858ed-9cd3-41b8-9017-71aaed4027c0" alt="Desktop" width="400"> | <img src="https://github.com/user-attachments/assets/be22e431-e777-4582-b25e-38210ce9375b" alt="Tablet" width="260"> | <img src="https://github.com/user-attachments/assets/d5d27590-3dbd-47ef-abe6-a431a79d7a8e" alt="Mobile" width="200"> |
+| *Sidebar kiri dengan grid 3 kolom* | *Grid 1 kolom untuk tablet* | *Filter kategori horizontal scroll* |
 
 ### Store Locator (store.html)
-#### Mobile View
-![Mobile - Store](url_screenshot_store_mobile)
-*Map di atas, list store di bawah*
-
-#### Desktop View
-![Desktop - Store](url_screenshot_store_desktop)
-*Split view: list kiri, map kanan*
+| Desktop | Mobile |
+| :-: | :-: |
+| <img src="https://github.com/user-attachments/assets/7e322e4c-9700-44e8-8485-fe8656ba5820" alt="Desktop" width="650"> | <img src="https://github.com/user-attachments/assets/896ed717-b1a6-4d02-80a3-56de23d9523c" alt="Mobile" width="200"> |
+| *Split view: list kiri, map kanan* | *Map di atas, list store di bawah* |
 
 ---
 
@@ -136,24 +120,35 @@ flowchart TD
 
 ### Lighthouse Audit Results
 #### Performance Score
-![Lighthouse Performance](url_lighthouse_performance)
-*Mobile: 85/100 | Desktop: 92/100*
+| Desktop: 97/100 | Mobile: 67/100 |
+| :-: | :-: |
+| <img src="https://github.com/user-attachments/assets/cd0218c5-fd6e-46bd-87eb-6e17a4d93631" alt="Desktop" width="500"> | <img src="https://github.com/user-attachments/assets/ddcd4a8a-aaa5-4b6f-a8f0-2f6e47ad432f" alt="Mobile" width="500"> |
 
 #### Accessibility Score
-![Lighthouse Accessibility](url_lighthouse_accessibility)
-*Score: 90/100 - Memenuhi standar aksesibilitas dasar*
+| Score: 72/100 |
+| :-: |
+| <img src="https://github.com/user-attachments/assets/ff1c27c5-e9a6-4d5e-b938-17fe6b3d2062" alt="Desktop" width="1080"> |
 
 ### Color Contrast Check
-![WCAG Color Contrast](url_color_contrast)
-*Rasio kontras teks-latar memenuhi WCAG AA*
+<div align="center">
+  <img width="800" alt="image" src="https://github.com/user-attachments/assets/2fe52e20-ea19-42e2-b9fa-f00916f364fc" />
+  <br>
+  <em>Rasio kontras teks-latar memenuhi WCAG AA</em>
+</div>
 
 ### Keyboard Navigation Test
-![Keyboard Navigation](url_keyboard_test)
-*Semua elemen interaktif dapat diakses via keyboard*
+<div align="center">
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/a21e3c98-34f2-4cef-9635-a7cba4132448" />
+  <br>
+  <em>Navigasi & Elemen bisa diakses menggunakan Keyboard (Tab index)</em>
+</div>
 
 ### Screen Reader Compatibility
-![Screen Reader](url_screenreader_test)
-*Struktur HTML semantic mendukung screen reader*
+<div align="center">
+  <img width="600" alt="image" src="https://github.com/user-attachments/assets/c50fb612-a062-4cd7-a325-516af0e7e932" />
+  <br>
+  <em>Struktur HTML semantic mendukung screen reader</em>
+</div>
 
 ---
 
@@ -163,13 +158,16 @@ flowchart TD
 - Images dioptimalkan untuk loading cepat
 - Kode telah diorganisir dengan struktur folder yang jelas
 
-**Link Repository:** [https://github.com/siocongs/TUBES-Prak-DW-A.git]
-**Live Demo:** [https://username.github.io/gaga-website](https://username.github.io/gaga-website)
+### Live Demo
+| Platform | Link | Status |
+| :--- | :--- | :---: |
+| **GitHub Pages** | <a href="https://siocongs.github.io/TUBES-Prak-DW-A/"><img src="https://img.shields.io/badge/Visit-GitHub_Pages-black?style=for-the-badge&logo=github&logoColor=white" height="30"/></a> | 🟢 |
+| **Netlify** | <a href="https://gagaindo.netlify.app/"><img src="https://img.shields.io/badge/Visit-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" height="30"/></a> | 🟢 |
 
 ---
 
 **Lampiran:**
-- Wireframe desain awal
-- Assets source (logo, gambar produk)
+- [Wireframe desain awal](https://www.figma.com/design/ngEfFo1N9C4NtvvaK0fpOF/WIREFRAME-PRAK-DW?node-id=0-1&t=EgSVGV8jri49VTyx-1)
+- [Assets source (logo, gambar produk, screenshot)](https://github.com/siocongs/TUBES-Prak-DW-A/tree/main/assets)
 - Testing checklist
 - Deployment configuration
