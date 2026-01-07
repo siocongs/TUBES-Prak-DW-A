@@ -122,34 +122,33 @@ flowchart TD
 #### Performance Score
 | Desktop: 97/100 | Mobile: 67/100 |
 | :-: | :-: |
-| <img src="https://github.com/user-attachments/assets/cd0218c5-fd6e-46bd-87eb-6e17a4d93631" alt="Desktop" width="500"> | <img src="https://github.com/user-attachments/assets/ddcd4a8a-aaa5-4b6f-a8f0-2f6e47ad432f" alt="Mobile" width="500"> |
+| <img src="https://github.com/user-attachments/assets/cd0218c5-fd6e-46bd-87eb-6e17a4d93631" alt="desktop" width="500"> | <img src="https://github.com/user-attachments/assets/ddcd4a8a-aaa5-4b6f-a8f0-2f6e47ad432f" alt="mobile" width="500"> |
 
 #### Accessibility Score
 | Score: 72/100 |
 | :-: |
-| <img src="https://github.com/user-attachments/assets/ff1c27c5-e9a6-4d5e-b938-17fe6b3d2062" alt="Desktop" width="1080"> |
+| <img src="https://github.com/user-attachments/assets/ff1c27c5-e9a6-4d5e-b938-17fe6b3d2062" alt="desktop" width="1080"> |
 
 ### Color Contrast Check
 <div align="center">
-  <img width="800" alt="image" src="https://github.com/user-attachments/assets/2fe52e20-ea19-42e2-b9fa-f00916f364fc" />
+  <img width="800" alt="Image" src="https://github.com/user-attachments/assets/2fe52e20-ea19-42e2-b9fa-f00916f364fc" />
   <br>
   <em>Rasio kontras teks-latar memenuhi WCAG AA</em>
 </div>
 
 ### Keyboard Navigation Test
 <div align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/a21e3c98-34f2-4cef-9635-a7cba4132448" />
+  <img width="500" alt="Image" src="https://github.com/user-attachments/assets/a21e3c98-34f2-4cef-9635-a7cba4132448" />
   <br>
   <em>Navigasi & Elemen bisa diakses menggunakan Keyboard (Tab index)</em>
 </div>
 
 ### Screen Reader Compatibility
 <div align="center">
-  <img width="600" alt="image" src="https://github.com/user-attachments/assets/c50fb612-a062-4cd7-a325-516af0e7e932" />
+  <img width="600" alt="Image" src="https://github.com/user-attachments/assets/c50fb612-a062-4cd7-a325-516af0e7e932" />
   <br>
   <em>Struktur HTML semantic mendukung screen reader</em>
 </div>
-
 ---
 
 **Catatan Tambahan:**
