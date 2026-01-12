@@ -68,20 +68,50 @@ Website GAGA Indonesia adalah platform e-commerce dan informasi untuk brand minu
 | *Split view: list kiri, map kanan* | *Map di atas, list store di bawah* |
 
 6. **Contact Form** - Formulir kontak dengan validasi
+   <div align="center">
+      <img width="700"  alt="Tangkapan Layar 2026-01-12 pukul 19 56 27" src="https://github.com/user-attachments/assets/82cb43e8-793c-4330-9f73-0fa6d3b48080" />
+   </div>
 
 ### Fitur Pendukung
 1. **Carousel Hero Section** - Slider promo di homepage
-2. **News/Blog Section** - Artikel terbaru seputar GAGA
-3. **User Authentication** - Halaman login dan registrasi
-4. **Promo Gallery** - Tampilan promosi khusus
+   <div align="center">
+      <img width="700" alt="image" src="https://github.com/user-attachments/assets/96872c95-7ea4-420c-b40f-e2a04af7992e" />
+   </div>
+3. **News/Blog Section** - Artikel terbaru seputar GAGA
+   <div align="center">
+      <img width="700" alt="image" src="https://github.com/user-attachments/assets/9562baa6-379f-4a9a-9507-07aeaf03a41b" />
+   </div>
+5. **User Authentication** - Halaman login dan registrasi
+
+| Login | Registrasi |
+| :-: | :-: |
+| <img width="400" alt="image" src="https://github.com/user-attachments/assets/9583dca1-431a-4ed0-ac98-c4b9f5945c85" /> | <img width="400" alt="image" src="https://github.com/user-attachments/assets/9599f3b7-8c4f-4523-b54f-129d43e51c35" /> |
+
+7. **Promo Gallery** - Tampilan promosi khusus
+   <div align="center">
+      <img width="700" alt="image" src="https://github.com/user-attachments/assets/34cf0b9c-a976-49c2-a6b2-2da210c57bab" />
+   </div>
 
 ### Fitur Interaktif
 1. **Navbar Auto-hide** - Navbar menghilang saat scroll down
-2. **Password Toggle** - Show/hide password di form login/register
-3. **Store Status** - Indikator buka/tutup real-time
-4. **Modal Product Detail** - Popup detail produk di halaman menu
+   <div align="center">
+      <img width="700" alt="auto-hide-nav-gaga" src="https://github.com/user-attachments/assets/83a0aea3-713c-4206-b76a-68a12eb1c6ba" />
+   </div>
+3. **Password Toggle** - Show/hide password di form login/register
+      <div align="center">
+         <img width="400" alt="image" src="https://github.com/user-attachments/assets/e45121d8-24f8-423a-aba6-959941cd4722" />
+         <img width="400" alt="image" src="https://github.com/user-attachments/assets/f3cb32e2-e5de-49d1-95ce-d4e4e350a27d" />
+      </div>
+5. **Store Status** - Indikator buka/tutup real-time
+   <div align="center">
+      <img width="200" alt="image" src="https://github.com/user-attachments/assets/d849b681-1148-4b49-bcc0-cbe0f6ecea02" />
+   </div>
+7. **Modal Product Detail** - Popup detail produk di halaman menu
+   <div align="center">
+      <img width="200" height="1700" alt="image" src="https://github.com/user-attachments/assets/5c6cbd17-909d-4124-8c2e-96047934a77e" />
+   </div>
 
-### screenshoot code
+### Screenshoot Code
 1. Beranda (index.html)
 Halaman utama yang memperkenalkan brand GAGA Indonesia, menampilkan produk unggulan, promo, berita, dan mengarahkan pengunjung untuk memesan.
 Isi Fitur:
