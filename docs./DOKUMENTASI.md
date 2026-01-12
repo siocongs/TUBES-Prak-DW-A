@@ -81,6 +81,110 @@ Website GAGA Indonesia adalah platform e-commerce dan informasi untuk brand minu
 3. **Store Status** - Indikator buka/tutup real-time
 4. **Modal Product Detail** - Popup detail produk di halaman menu
 
+### screenshoot code
+1. Beranda (index.html)
+Halaman utama yang memperkenalkan brand GAGA Indonesia, menampilkan produk unggulan, promo, berita, dan mengarahkan pengunjung untuk memesan.
+Isi Fitur:
+- Hero Carousel – Menampilkan 3 slide produk terbaru (Mochi Taro, Signature Series, dll) dengan gambar menarik dan call-to-action
+  <img width="2080" height="2686" alt="hero" src="https://github.com/user-attachments/assets/66d3244b-0712-4cff-a728-f9950e2083ef" />1
+- About Section – Cerita singkat tentang GAGA sebagai #1 Authentic Thai Milk Tea dengan konsep "Attitude in a Cup"
+  <img width="1772" height="1318" alt="hero" src="https://github.com/user-attachments/assets/04ddba07-15e7-43db-aee6-97661e929bd4" />
+- Promo Section – 2 kartu promo dengan desain dark/light untuk menampilkan New Signature Series dan Limited Edition
+  <img width="2234" height="1774" alt="promo" src="https://github.com/user-attachments/assets/597050b8-55ef-4c29-b6e6-b396cf55cbca" />
+- Menu Recommendation – 3 produk rekomendasi dengan rating dan deskripsi
+  <img width="2326" height="2002" alt="menu" src="https://github.com/user-attachments/assets/abfe6b2e-a1eb-4b09-a5c9-670e83db2d80" />
+- News Section – 4 berita terbaru tentang kegiatan GAGA dengan tanggal dan gambar
+  <img width="9900" height="2800" alt="news section" src="https://github.com/user-attachments/assets/5aa383bf-9c28-4322-8605-2d2da5934ede" />
+- Fixed Navigation Bar – Menu navigasi lengkap dengan logo, fitur "Find a Store", Sign In, dan Join Now
+- Top Bar – Bar kecil di atas navbar dengan pesan motivasi dan tombol "Start Order"
+- Footer Komprehensif – Logo, informasi kantor, layanan perlindungan konsumen, dan media sosial
+  <img width="1480" height="2534" alt="footer" src="https://github.com/user-attachments/assets/0cb92aa0-014b-44ba-a27e-433d8b795e11" />
+
+2. Menu (menu.html)
+Halaman katalog produk lengkap dengan sistem filter kategori untuk memudahkan pencarian minuman.
+Isi Fitur:
+- Hero Banner – Gambar besar dengan judul "OUR MENU"
+- Sidebar Kategori – 13 kategori produk: All, Recommended, Thai Tea, Milk Tea, Black Tea, Fresh Milk, Fresh Juice, Chocolate, Green Tea, Coffee, Frappe, Dessert, Signature
+- Grid Produk – Display produk dengan gambar, nama, harga, dan tombol detail
+- Product Modal – Popup detail produk yang muncul saat mengklik item (menampilkan gambar besar, nama, harga, deskripsi, dan tombol pesan)
+- Filter JavaScript – Sistem filter real-time berdasarkan kategori
+- Responsive Layout – Layout sidebar + grid yang responsif untuk desktop/mobile
+
+3. Promo (promo.html)
+Halaman khusus untuk menampilkan penawaran dan promo terbaru.
+Isi Fitur:
+- Promo Cards Layout – 3 kartu promo besar dengan desain alternating (dark/light)
+- Promo Menu Section – Grid 3 produk yang sedang promo dengan rating dan deskripsi
+- Visual Konten – Gambar produk yang menarik dengan teks promo jelas
+- Call-to-Action – Tombol "Explore Menu" dan "See Promo" yang mengarah ke halaman terkait
+
+4. Berita (news.html)
+Halaman blog/news untuk update terbaru tentang GAGA.
+Isi Fitur:
+- News Grid – 8 kartu berita dengan layout grid responsive
+- Konten Berita – Setiap kartu berisi: gambar, tanggal, judul, deskripsi singkat, dan link "Baca selengkapnya"
+- Topik Variatif – Berita tentang: komitmen keberlanjutan, pembukaan store baru, promo event, pertumbuhan bisnis
+- Header Section – Judul halaman dan deskripsi singkat
+
+5. Kontak (contact.html)
+Halaman kontak dan tentang perusahaan.
+Isi Fitur:
+- About Section – 2 blok cerita: "Our Story" (sejarah brand) dan "About our Products" (sertifikasi halal)
+- Contact Hero – Header dengan judul dan tab (Pertanyaan/Customer Service)
+
+Contact Container – Layout 2 kolom:
+- Kiri: Informasi kontak (telepon, email, alamat kantor)
+- Kanan: Form kontak dengan field: Nama, Email, Telepon, Pesan, dan tombol Send
+- Informasi Detail – Alamat lengkap kantor pusat dan nomor telepon resmi
+
+6. Login (login.html)
+Halaman autentikasi untuk member yang sudah terdaftar.
+Isi Fitur:
+- Login Form – Form sederhana dengan: Username/Email, Password (dengan toggle visibility)
+- Remember Me – Checkbox "Keep me signed in"
+- Forgot Links – Link untuk lupa username/password
+- Join Rewards Section – Promo untuk bergabung dengan GAGA Rewards (exclusive promos, birthday treats)
+- Password Toggle – Fitur show/hide password dengan icon eye
+
+7. Registrasi (register.html)
+Halaman pendaftaran member baru.
+Isi Fitur:
+Registration Form – Form 2 bagian:
+- Personal Information (First name, Last name)
+- Account Security (Email sebagai username, Password dengan requirements)
+- Password Requirements – Petunjuk panjang dan karakteristik password
+- Password Toggle – Fitur show/hide password
+- Clean Layout – Form dengan shadow dan rounded corners untuk UX yang baik
+
+8. Toko (store.html)
+Halaman pencarian lokasi toko GAGA.
+Isi Fitur:
+- Dual Mode – Tab Pickup vs Delivery
+
+Pickup Mode:
+- Search box untuk mencari toko
+- Store list dengan detail lokasi
+- Integration dengan Google Maps API
+- Delivery Mode – Informasi delivery service dengan partner
+- Interactive Map – Google Maps integration untuk menunjukkan lokasi toko
+- Store Details – Informasi jam operasional dan alamat lengkap
+
+Fitur Umum yang Konsisten di Semua Halaman:
+- Navigation Bar – Konsisten dengan logo, menu utama, dan auth buttons
+- Top Bar – "It's a great day for a cup of tea" + Start Order button
+- Footer – Sama di semua halaman dengan: logo, office info, consumer protection, social media
+- Responsive Design – Menggunakan Bootstrap 5 untuk mobile-friendly
+- Brand Consistency – Warna, font, dan styling yang konsisten
+- Icon Set – Menggunakan Bootstrap Icons untuk visual yang rapi
+
+Teknologi yang Digunakan:
+- Frontend: HTML5, CSS3, JavaScript
+- Framework: Bootstrap 5.3.8
+- Icons: Bootstrap Icons
+- Maps: Google Maps API (untuk store locator)
+- Structure: Assets terorganisir (css/, js/, img/)
+
+Setiap halaman memiliki tujuan yang jelas dan mengarahkan pengunjung melalui customer journey: dari pengenalan brand → melihat produk → promo → informasi kontak → registrasi → pemesanan.
 ---
 
 ## 4. Struktur Halaman
