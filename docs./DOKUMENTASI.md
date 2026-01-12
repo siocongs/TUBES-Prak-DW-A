@@ -46,10 +46,28 @@ Website GAGA Indonesia adalah platform e-commerce dan informasi untuk brand minu
 
 ### Fitur Utama
 1. **Multi-page Navigation** - 8 halaman utama yang saling terhubung
+   <img width="2840" height="254" alt="image" src="https://github.com/user-attachments/assets/5d04fb17-0a25-432a-b6aa-a91ccb3a275e" />
 2. **Responsive Design** - Optimal di mobile, tablet, dan desktop
+
+| Desktop (1440px) | Tablet/Pad (768px) | Mobile (375px) |
+| :-: | :-: | :-: |
+| <img src="https://github.com/user-attachments/assets/7814924e-4e07-473c-8670-1d668d546f10" alt="Desktop" width="400"> | <img src="https://github.com/user-attachments/assets/a8be5cec-f769-40b0-b680-d02bc5e340d1" alt="Tablet" width="260"> | <img src="https://github.com/user-attachments/assets/a6993959-865a-44ff-b6be-599f396be846" alt="Mobile" width="200"> |
+| *Full layout dengan semua komponen* | *Layout grid menyesuaikan ukuran tablet* | *Tampilan mobile dengan menu hamburger* |
 3. **Interactive Menu** - Filter kategori produk dengan modal detail
+
+| Desktop | Tablet/Pad | Mobile |
+| :-: | :-: | :-: |
+| <img src="https://github.com/user-attachments/assets/8fb858ed-9cd3-41b8-9017-71aaed4027c0" alt="Desktop" width="400"> | <img src="https://github.com/user-attachments/assets/be22e431-e777-4582-b25e-38210ce9375b" alt="Tablet" width="260"> | <img src="https://github.com/user-attachments/assets/d5d27590-3dbd-47ef-abe6-a431a79d7a8e" alt="Mobile" width="200"> |
+| *Sidebar kiri dengan grid 3 kolom* | *Grid 1 kolom untuk tablet* | *Filter kategori horizontal scroll* |
+
 4. **Store Locator** - Peta interaktif dengan daftar outlet
-5. **Contact Form** - Formulir kontak dengan validasi
+
+| Desktop | Mobile |
+| :-: | :-: |
+| <img src="https://github.com/user-attachments/assets/7e322e4c-9700-44e8-8485-fe8656ba5820" alt="Desktop" width="650"> | <img src="https://github.com/user-attachments/assets/896ed717-b1a6-4d02-80a3-56de23d9523c" alt="Mobile" width="200"> |
+| *Split view: list kiri, map kanan* | *Map di atas, list store di bawah* |
+
+6. **Contact Form** - Formulir kontak dengan validasi
 
 ### Fitur Pendukung
 1. **Carousel Hero Section** - Slider promo di homepage
