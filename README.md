@@ -1,4 +1,4 @@
-# ☕ Coffee Shop Website - Tugas Besar Prak. Desain Web
+# ☕ GAGA - Tugas Besar Prak. Desain Web
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/siocongs/TUBES-Prak-DW-A)
 ![GitHub license](https://img.shields.io/github/license/siocongs/TUBES-Prak-DW-A)
@@ -18,7 +18,7 @@ Sesuai ketentuan tugas, website ini dibangun menggunakan teknologi web dasar (HT
 ### 🔗 Live Demo & Deployment
 | Platform | Link | Status |
 | :--- | :--- | :---: |
-| **GitHub Pages** | <a href="https://siocongs.github.io/TUBES-Prak-DW-A/"><img src="https://img.shields.io/badge/Visit-GitHub_Pages-black?style=for-the-badge&logo=github&logoColor=white" height="30"/></a> | 🟢 |
+| **GitHub Pages** | <a href="https://siocongs.github.io/GAGA/"><img src="https://img.shields.io/badge/Visit-GitHub_Pages-black?style=for-the-badge&logo=github&logoColor=white" height="30"/></a> | 🟢 |
 | **Netlify** | <a href="https://gagaindo.netlify.app/"><img src="https://img.shields.io/badge/Visit-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" height="30"/></a> | 🟢 |
 
 ---
